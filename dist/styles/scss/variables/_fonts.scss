@@ -1,0 +1,19 @@
+$smallFontSize: 12px;
+$mediumFontSize: 16px;
+$largeFontSize: 24px;
+
+@font-face {
+  font-family: "DanaRegular";
+  src: url('/assets/fonts/eot/dana-regular.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/eot/dana-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/woff/dana-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/ttf/Dana-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "DanaBold";
+  src: url('/assets/fonts/eot/dana-bold.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/eot/dana-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/woff/dana-bold.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/ttf/Dana-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}

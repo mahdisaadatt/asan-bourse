@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "AEIA,UAAU,CACR,WAAW,CAAE,aAAa,CAC1B,GAAG,CAAE,yCAAyC,CAC9C,GAAG,CAAE,gDAAgD,CAAC,2BAA2B,CAC5E,2CAA2C,CAAC,cAAc,CAC1D,yCAAyC,CAAE,kBAAkB,CAGpE,UAAU,CACR,WAAW,CAAE,UAAU,CACvB,GAAG,CAAE,sCAAsC,CAC3C,GAAG,CAAE,6CAA6C,CAAC,2BAA2B,CACzE,wCAAwC,CAAC,cAAc,CACvD,sCAAsC,CAAE,kBAAkB,CEjBjE,AAAA,CAAC,AAAC,CACA,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACT,UAAU,CAAE,UAAU,CACvB,AAED,AAAA,IAAI,CACJ,IAAI,AAAC,CACH,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,gBAAgB,CHTV,OAAO,CGUb,SAAS,CAAE,GAAG,CACd,WAAW,CAAE,yBAAyB,CACvC",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/variables/_colors.scss",
+        "../scss/variables/_fonts.scss",
+        "../scss/variables/_screenSize.scss",
+        "../scss/partials/_all.scss",
+        "../scss/partials/components/_nav.scss",
+        "../scss/partials/components/_footer.scss",
+        "../scss/partials/pages/_landing.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
