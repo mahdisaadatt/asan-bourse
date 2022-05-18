@@ -4,15 +4,15 @@
   z-index: 1;
   position: sticky;
   top: 0;
-  background: rgba(245, 246, 250,.8);
+  background: rgba(245, 246, 250, 0.9);
 
-
-  .container {
+  .navContainer {
     width: 100%;
     height: auto;
     max-width: $screenSizeXl;
     display: flex;
-    margin: 14px auto;
+    margin: 0 auto;
+    padding: 2px 0;
     justify-content: space-between;
     align-items: center;
     font-weight: 800;
@@ -119,7 +119,7 @@
           line-height: 45px;
           text-align: center;
           border-radius: 8px;
-          color: #afafaf;
+          color: #888888;
           transition: all 0.3s;
           &:hover {
             color: #000;

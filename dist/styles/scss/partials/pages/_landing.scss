@@ -1,0 +1,12 @@
+.mainSection {
+  max-width: $screenSizeLg;
+  margin: 0 auto;
+
+  .container {
+    padding: 5rem 0;
+
+    @media screen and (max-width: $screenSizeLg) {
+      padding: 5rem 2rem;
+    }
+  }
+}

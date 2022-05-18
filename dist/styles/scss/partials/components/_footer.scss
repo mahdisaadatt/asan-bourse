@@ -1,0 +1,115 @@
+.footer {
+  width: 100%;
+  background: #e6e5ea;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  clear: both;
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+    max-width: $screenSizeXl;
+
+    img {
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    .footerRow {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 24px;
+      flex-wrap: nowrap;
+
+      @media screen and (max-width: $screenSizeSm) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      @media screen and (min-width: $screenSizeSm) and (max-width: $screenSizeLg) {
+        flex-flow: wrap;
+        margin: 0 auto;
+      }
+
+      .footerContact {
+        font-weight: 900;
+        flex-basis: 40%;
+        @media screen and (min-width: $screenSizeSm) and (max-width: $screenSizeLg) {
+          margin: 2rem auto;
+          text-align: center;
+          flex: 1 0 50%;
+        }
+        a {
+          color: #1453a5;
+          img {
+            width: 125px;
+            height: auto;
+          }
+        }
+
+        div {
+          padding: 24px 12px;
+        }
+      }
+    }
+
+    .footerList {
+      margin: 24px 0;
+      @media screen and (min-width: $screenSizeSm) and (max-width: $screenSizeLg) {
+        flex: 1 0 50%;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: 900;
+        color: #1453a5;
+      }
+      ul {
+        list-style: none;
+        margin-top: 24px;
+        li {
+          line-height: 2.5rem;
+        }
+        a {
+          color: #888888;
+          transition: all 0.3s;
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  .socialAndCopyRight {
+    margin: 2rem 24px;
+    div {
+      &:nth-child(1) {
+        margin-bottom: 16px;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+      &:nth-child(2) {
+        p {
+          &:nth-child(1) {
+            color: #888888;
+          }
+          &:nth-child(2) {
+            color: #c5c5c5;
+          }
+        }
+      }
+    }
+  }
+}
