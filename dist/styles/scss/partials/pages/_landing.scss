@@ -1,12 +1,182 @@
 .mainSection {
-  max-width: $screenSizeLg;
-  margin: 0 auto;
-
   .container {
-    padding: 5rem 0;
-
+    max-width: $screenSizeLg;
+    margin: 0 auto;
     @media screen and (max-width: $screenSizeLg) {
-      padding: 5rem 2rem;
+      padding: 0 2rem;
     }
+
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 0;
+    }
+
+    // Section 1
+    .sec1 {
+      @media screen and (max-width: $screenSizeMd) {
+        flex-direction: column-reverse;
+      }
+      .backgroundImg {
+        background-image: url('../../assets/img/png/work.png');
+        flex: 1 1 auto;
+        width: 100%;
+        height: 30rem;
+        @media screen and (max-width: $screenSizeMd) {
+          width: 100%;
+          height: 300px;
+        }
+      }
+      .innerSec1 {
+        flex: 1 1 auto;
+        .slider {
+          p {
+            &:nth-child(1) {
+              color: $darkBlue;
+            }
+            &:nth-child(3) {
+              width: 80%;
+              @media screen and (max-width: $screenSizeSm) {
+                width: 100%;
+              }
+            }
+          }
+          h2 {
+            margin: 20px 0;
+          }
+          div {
+            &:nth-child(4) {
+              @include flex();
+              justify-content: start;
+              margin: 3rem 0;
+              @media screen and (max-width: $screenSizeSm) {
+                flex-direction: column;
+                align-items: flex-start;
+              }
+              a {
+                font-weight: 600;
+                &:nth-child(1) {
+                  background-color: $lightBlue;
+                  color: #fff;
+                  border-radius: 8px;
+                  padding: 12px 18px;
+                }
+                &:nth-child(2) {
+                  color: $lightBlue;
+                  text-decoration: underline;
+                  margin-right: 24px;
+                  text-underline-offset: 6px;
+                  @media screen and (max-width: $screenSizeSm) {
+                    margin-right: 0;
+                    margin-top: 24px;
+                  }
+
+                  &:hover {
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // End Section 1
+
+    // Section 2
+    .innerSec2 {
+      .intro {
+        @include flex();
+        margin-top: 5rem;
+        @media screen and (max-width: $screenSizeMd) {
+          @include flex(column);
+        }
+        .introImg {
+          width: 400px;
+          height: 400px;
+          @media screen and (max-width: $screenSizeSm) {
+            width: 200px;
+            height: 200px;
+          }
+        }
+        div {
+          width: 50%;
+          @media screen and (max-width: $screenSizeMd) {
+            width: 100%;
+          }
+          &:nth-child(2) {
+            flex: 1 1 auto;
+            p {
+              width: 80%;
+              margin: 40px 0;
+              @media screen and (max-width: $screenSizeSm) {
+                width: 100%;
+              }
+            }
+          }
+        }
+        &:nth-child(odd) {
+          flex-direction: row-reverse;
+          @media screen and (max-width: $screenSizeMd) {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+    // End Section 2
+
+    // Section 3
+    .sec3 {
+      @include flex(column);
+      div {
+        &:nth-child(1) {
+          margin-bottom: 3rem;
+        }
+      }
+      .cardContainer {
+        @include flex();
+        align-items: initial;
+        flex-wrap: nowrap;
+        flex-flow: wrap;
+        margin-top: 2rem;
+        gap: 10px;
+        .card {
+          @include flex();
+          background-color: $white;
+          border-radius: 20px;
+          padding: 4px 24px;
+          height: 100%;
+          width: 300px;
+          text-align: center;
+          transition: all 0.3s;
+          @media screen and (max-width: 690px) {
+            width: 100%;
+          }
+          &:hover {
+            background-color: #fff;
+            box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+          }
+          .innerCard {
+            @include flex(column);
+            .backgroundImg {
+              width: 100px;
+              height: 100px;
+              margin: 1rem 0;
+            }
+            p {
+              margin: 20px 0;
+            }
+            .btn {
+              background-color: transparent;
+              color: $lightBlue;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    // End Section 3
   }
 }

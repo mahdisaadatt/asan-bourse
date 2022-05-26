@@ -15,3 +15,102 @@ body {
   direction: rtl;
   font-family: 'DanaRegular', sans-serif;
 }
+
+@mixin flex($pos: row) {
+  display: flex;
+  flex-direction: $pos;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-xl {
+  color: $darkBlue;
+  font-size: 28px;
+  font-weight: 900;
+  font-family: 'DanaBold', sans-serif;
+}
+.title-lg {
+  color: $darkBlue;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: 'DanaBold', sans-serif;
+}
+.title-md {
+  color: $darkBlue;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: 'DanaBold', sans-serif;
+}
+.mini-text {
+  font-size: 14px;
+  color: #888;
+  font-weight: 900;
+}
+
+
+.inactive {
+  opacity: 0.5;
+}
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 55px;
+  color: $white;
+  background-color: $lightBlue;
+  border-radius: 10px;
+  &:hover {
+    .arrow {
+      transform: translate(0);
+    }
+  }
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  color: $lightBlue;
+  transform: translate(-10px);
+  transition: all .3s;
+  margin-right: 10px;
+}
+
+.backgroundImg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.sliderBtn {
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  background-color: transparent;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.highlight {
+  text-align: center;
+  p {
+    font-size: 14px;
+    color: #888;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: $darkBlue;
+    font-family: 'DanaBold';
+
+    span {
+      border-bottom: 10px solid $yellow;
+    }
+  }
+}

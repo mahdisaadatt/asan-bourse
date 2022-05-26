@@ -7,9 +7,8 @@
   clear: both;
 
   .footerContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column);
+    align-items: initial;
     padding-top: 3rem;
     padding-bottom: 3rem;
     margin: 0 auto;
@@ -23,10 +22,8 @@
     }
 
     .footerRow {
-      display: flex;
-      flex-direction: row;
+      @include flex();
       justify-content: space-between;
-      align-items: center;
       margin: 0 24px;
       flex-wrap: nowrap;
 
@@ -70,8 +67,6 @@
       }
 
       h2 {
-        font-size: 18px;
-        font-weight: 900;
         color: #1453a5;
       }
       ul {

@@ -5,21 +5,21 @@ $largeFontSize: 24px;
 @font-face {
   font-family: DanaRegular;
   // Dana Regular Text
-  src: url('/assets/fonts/eot/dana-regular.eot'); /* IE9 Compat Modes */
-  src: url('/assets/fonts/eot/dana-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/woff/dana-regular.woff') format('woff'), /* Modern Browsers */
-       url('/assets/fonts/ttf/Dana-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('../../assets/fonts/eot/dana-regular.eot'); /* IE9 Compat Modes */
+  src: url('../../assets/fonts/eot/dana-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../assets/fonts/woff/dana-regular.woff') format('woff'), /* Modern Browsers */
+       url('../../assets/fonts/ttf/Dana-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
   // Dana Regular Numbers
-  src: url('/assets/fonts/eot/dana-fanum-regular.eot');
-  src: url('/assets/fonts/eot/dana-fanum-regular.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/woff/dana-fanum-regular.woff') format('woff'),
-       url('/assets/fonts/ttf/Dana-Num.ttf')  format('truetype');
+  src: url('../../assets/fonts/eot/dana-fanum-regular.eot');
+  src: url('../../assets/fonts/eot/dana-fanum-regular.eot?#iefix') format('embedded-opentype'),
+       url('../../assets/fonts/woff/dana-fanum-regular.woff') format('woff'),
+       url('../../assets/fonts/ttf/Dana-Num.ttf')  format('truetype');
 }
 
 @font-face {
   font-family: DanaBold;
-  src: url('/assets/fonts/eot/dana-bold.eot');
-  src: url('/assets/fonts/eot/dana-bold.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/woff/dana-bold.woff') format('woff'),
-       url('/assets/fonts/ttf/Dana-Bold.ttf')  format('truetype');
+  src: url('../../assets/fonts/eot/dana-bold.eot');
+  src: url('../../assets/fonts/eot/dana-bold.eot?#iefix') format('embedded-opentype'),
+       url('../../assets/fonts/woff/dana-bold.woff') format('woff'),
+       url('../../assets/fonts/ttf/Dana-Bold.ttf')  format('truetype');
 }

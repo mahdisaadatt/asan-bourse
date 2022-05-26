@@ -7,6 +7,15 @@
     <title>آسان بورس پلتفرم طراحی استراتژی معاملاتی</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/css/main.css" />
+
+    <!-- Development -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward-subtle.css" />
+
+    <!-- Production -->
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script> -->
   </head>
   <body>
     <nav class="navbar">
@@ -16,19 +25,19 @@
           <span></span>
           <span></span>
         </div>
-        <a href="#">
-          <img src="./assets/img/asanbourse-logo.svg" alt="Asan Bourse" class="navBrand" />
+        <a href="#0">
+          <img src="./assets/img/svg/asanbourse-logo.svg" alt="Asan Bourse" class="navBrand" />
         </a>
         <div class="wrapper">
           <ul class="navList">
-            <li><a href="#" class="activeNavItem">دستیار بورس</a></li>
-            <li><a href="#">داشبورد ها</a></li>
-            <li><a href="#">درباره ما</a></li>
-            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#0" class="activeNavItem">دستیار بورس</a></li>
+            <li><a href="#0">داشبورد ها</a></li>
+            <li><a href="#0">درباره ما</a></li>
+            <li><a href="#0">تماس با ما</a></li>
           </ul>
-          <div class="navStatus">
-            <a href="#" class="login">ورود به حساب</a>
-            <a href="#" class="signup">ثبت نام</a>
+          <div class="accountStatus">
+            <a href="#0" class="login">ورود به حساب</a>
+            <a href="#0" class="signup">ثبت نام</a>
           </div>
         </div>
       </div>
@@ -36,24 +45,133 @@
 
     <main class="mainSection">
       <div class="container">
-        <p>
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد
-          گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان
-          مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
-          فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
-          کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
-          با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا
-          با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته
-          اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
-          کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-          راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
-          مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
-          طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم
-          متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
-          آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز
-          شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
-          تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخسطرآنچنان که لازم است، و برابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-        </p>
+
+        <!-- Section 1 -->
+        <section class="section sec1">
+          <div class="innerSec1">
+            <div class="slider">
+              <div class="slides slide1">
+                <p class="mini-text">&#x1F91D; با پلتفرم آسان بورس.</p>
+                <h2 class="title-xl">
+                  <span>بهترین موقعیت های</span>
+                  <br />
+                  <span>معاملاتی بازار را شناسایی کنید.</span>
+                </h2>
+                <p class="mini-text">در پلتفرم آسان بورس به مجموعه ای از داشبورد های بورسی دسترسی خواهید داشت که اطلاعات جامع و مفیدی از وضعیت بازار در اختیار شما قرار می دهد.</p>
+                <div>
+                  <a href="#0">7 روز تست رایگان</a>
+                  <a href="#0">مشاهده اطلاعات بیشتر</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="sliderBtn nextSlideBtn">
+                <img src="./assets/img/svg/arrow-right-blue.svg" alt="بعدی" />
+              </button>
+              <button class="sliderBtn previousSlideBtn inactive">
+                <img src="./assets/img/svg/arrow-left-blue.svg" alt="قبلی" />
+              </button>
+            </div>
+          </div>
+          <div class="backgroundImg"></div>
+        </section>
+        <!-- End Section 1 -->
+
+        <!-- Section 2 -->
+        <section class="section sec2">
+          <div class="innerSec2">
+            <div class="highlight">
+              <p>چرا آسان بورس را انتخاب کنیم؟</p>
+              <h2><span>خدمات </span>آسان بورس</h2>
+            </div>
+            <div class="intro">
+              <img src="./assets/img/png/Saly-42.png" alt="" class="introImg" />
+              <div>
+                <h2 class="title-lg">نمای بازار.</h2>
+                <p class="mini-text">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، ک اساسا مورد استفاده قرار
+                  گیرد.
+                </p>
+                <a href="#0" class="btn">مشاهده بیشتر <img src="./assets/img/svg/arrow-left-white.svg" alt="قبلی" class="arrow" /></a>
+              </div>
+            </div>
+            <div class="intro">
+              <img src="./assets/img/png/Saly-38.png" alt="" class="introImg" />
+              <div>
+                <h2 class="title-lg">فیلتر نویسی بدون کد نویسی.</h2>
+                <p class="mini-text">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، ک اساسا مورد استفاده قرار
+                  گیرد.
+                </p>
+                <a href="#0" class="btn">مشاهده بیشتر <img src="./assets/img/svg/arrow-left-white.svg" alt="قبلی" class="arrow" /></a>
+              </div>
+            </div>
+            <div class="intro">
+              <img src="./assets/img/png/Saly-43.png" alt="" class="introImg" />
+              <div>
+                <h2 class="title-lg">تست استراتژی معاملاتی.</h2>
+                <p class="mini-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجلهژی مورد استفاده قرار گیرد.</p>
+                <a href="#0" class="btn">مشاهده بیشتر <img src="./assets/img/svg/arrow-left-white.svg" alt="قبلی" class="arrow" /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Section 2 -->
+
+        <!-- Section 3 -->
+        <section class="section sec3">
+          <div class="highlight">
+            <p>انجام معاملات با آسان بورس</p>
+            <h2><span>امکانات </span>آسان بورس</h2>
+          </div>
+          <div class="cardContainer">
+            <div class="card">
+              <div class="innerCard">
+                <img src="./assets/img/svg/Saly-24.svg" alt="" class="backgroundImg" />
+                <h3 class="title-md">دریافت نوتیفیکیشن</h3>
+                <p class="mini-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجلهژی مورد استفاده قرار گیرد.</p>
+                <a href="#0" class="btn">مشاهده <img src="./assets/img/svg/arrow-left-blue.svg" alt="قبلی" class="arrow" /></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="innerCard">
+                <img src="./assets/img/svg/Saly-25.svg" alt="" class="backgroundImg" />
+                <h3 class="title-md">معاملات الگوریتمی</h3>
+                <p class="mini-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجلهژی مورد استفاده قرار گیرد.</p>
+                <a href="#0" class="btn">مشاهده <img src="./assets/img/svg/arrow-left-blue.svg" alt="قبلی" class="arrow" /></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="innerCard">
+                <img src="./assets/img/svg/Saly-44.svg" alt="" class="backgroundImg" />
+                <h3 class="title-md">فیلترهای آماده</h3>
+                <p class="mini-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجلهژی مورد استفاده قرار گیرد.</p>
+                <a href="#0" class="btn">مشاهده <img src="./assets/img/svg/arrow-left-blue.svg" alt="قبلی" class="arrow" /></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="innerCard">
+                <img src="./assets/img/svg/Saly-45.svg" alt="" class="backgroundImg" />
+                <h3 class="title-md">بهینه سازی فیلتر و استراتژی</h3>
+                <p class="mini-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجلهژی مورد استفاده قرار گیرد.</p>
+                <a href="#0" class="btn">مشاهده <img src="./assets/img/svg/arrow-left-blue.svg" alt="قبلی" class="arrow" /></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="innerCard">
+                <img src="./assets/img/svg/Saly-43.svg" alt="" class="backgroundImg" />
+                <h3 class="title-md">آموزش بورس</h3>
+                <p class="mini-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجلهژی مورد استفاده قرار گیرد.</p>
+                <a href="#0" class="btn">مشاهده <img src="./assets/img/svg/arrow-left-blue.svg" alt="قبلی" class="arrow" /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Section 3 -->
+
+        <!-- <section class="section sec4"></section>
+        <section class="section sec5"></section>
+        <section class="section sec6"></section> -->
       </div>
     </main>
 
@@ -61,8 +179,8 @@
       <div class="footerContainer">
         <div class="footerRow">
           <div class="footerContact">
-            <a href="#">
-              <img src="./assets/img/asanbourse-logo.svg" alt="Asan Bourse" />
+            <a href="#0">
+              <img src="./assets/img/svg/asanbourse-logo.svg" alt="Asan Bourse" />
             </a>
             <div>
               <p style="color: #1453a5">تهران، فلکه دوم صادقیه، خیابان سازمان آب غربی، نبش گلستان دوم، پلاک 3، واحد 3</p>
@@ -70,60 +188,60 @@
               <a href="mailto:contact@asanbourse.ir"><p>contact@asanbourse.ir</p></a>
             </div>
             <div>
-              <a href="#"><img src="./assets/img/rezi.png" alt="نماد ساماندهی" /> </a>
-              <a href="#"><img src="./assets/img/enamad-logo.png" alt="ای نماد" /> </a>
+              <a href="#0"><img src="./assets/img/png/rezi.png" alt="نماد ساماندهی" /> </a>
+              <a href="#0"><img src="./assets/img/png/enamad-logo.png" alt="ای نماد" /> </a>
             </div>
           </div>
           <div class="footerList">
-            <h2>آسان بورس</h2>
+            <h2 class="title-md">آسان بورس</h2>
             <ul>
-              <li><a href="#">صفحه اصلی</a></li>
-              <li><a href="#">دستیار بورس</a></li>
-              <li><a href="#">داشبورد ها</a></li>
-              <li><a href="#">وبلاگ آسان بورس</a></li>
-              <li><a href="#">درباره ما</a></li>
-              <li><a href="#">تماس با ما</a></li>
-              <li><a href="#">حریم شخصی</a></li>
-              <li><a href="#">قوانین و مقررات</a></li>
+              <li><a href="#0">صفحه اصلی</a></li>
+              <li><a href="#0">دستیار بورس</a></li>
+              <li><a href="#0">داشبورد ها</a></li>
+              <li><a href="#0">وبلاگ آسان بورس</a></li>
+              <li><a href="#0">درباره ما</a></li>
+              <li><a href="#0">تماس با ما</a></li>
+              <li><a href="#0">حریم شخصی</a></li>
+              <li><a href="#0">قوانین و مقررات</a></li>
             </ul>
           </div>
           <div class="footerList">
-            <h2>خدمات آسان بورس</h2>
+            <h2 class="title-md">خدمات آسان بورس</h2>
             <ul>
-              <li><a href="#">نمای بازار</a></li>
-              <li><a href="#">فیلترنویسی بدون کدنویسی</a></li>
-              <li><a href="#">تست استراتژی معاملاتی</a></li>
-              <li><a href="#">دریافت نوتیفیکیشن</a></li>
-              <li><a href="#">معاملات الگوریتمی</a></li>
-              <li><a href="#">فیلتر های آماده</a></li>
-              <li><a href="#">بهینه سازی فیلتر و استراتژی</a></li>
-              <li><a href="#">آموزش بورس</a></li>
+              <li><a href="#0">نمای بازار</a></li>
+              <li><a href="#0">فیلترنویسی بدون کدنویسی</a></li>
+              <li><a href="#0">تست استراتژی معاملاتی</a></li>
+              <li><a href="#0">دریافت نوتیفیکیشن</a></li>
+              <li><a href="#0">معاملات الگوریتمی</a></li>
+              <li><a href="#0">فیلتر های آماده</a></li>
+              <li><a href="#0">بهینه سازی فیلتر و استراتژی</a></li>
+              <li><a href="#0">آموزش بورس</a></li>
             </ul>
           </div>
           <div class="footerList">
-            <h2>لینک های مفید</h2>
+            <h2 class="title-md">لینک های مفید</h2>
             <ul>
-              <li><a href="#">ورود موفق به بورس</a></li>
-              <li><a href="#">وبلاگ آسان بورس</a></li>
-              <li><a href="#">استراتژی معاملاتی</a></li>
-              <li><a href="#">فرصت های شغلی</a></li>
-              <li><a href="#">پکیج فیلتر های آماده</a></li>
-              <li><a href="#">راهنمای آسان بورس</a></li>
-              <li><a href="#">فیلترنویسی اپلیکیشن آسان</a></li>
-              <li><a href="#">بورس طراحی آسان</a></li>
+              <li><a href="#0">ورود موفق به بورس</a></li>
+              <li><a href="#0">وبلاگ آسان بورس</a></li>
+              <li><a href="#0">استراتژی معاملاتی</a></li>
+              <li><a href="#0">فرصت های شغلی</a></li>
+              <li><a href="#0">پکیج فیلتر های آماده</a></li>
+              <li><a href="#0">راهنمای آسان بورس</a></li>
+              <li><a href="#0">فیلترنویسی اپلیکیشن آسان</a></li>
+              <li><a href="#0">بورس طراحی آسان</a></li>
             </ul>
           </div>
         </div>
         <div class="socialAndCopyRight">
           <div>
-            <a href="#">
-              <img src="./assets/img/instagram.svg" alt="اینستاگرام" />
+            <a href="#0">
+              <img src="./assets/img/svg/instagram.svg" alt="اینستاگرام" />
             </a>
-            <a href="#">
-              <img src="./assets/img/telegram.svg" alt="تلگرام" />
+            <a href="#0">
+              <img src="./assets/img/svg/telegram.svg" alt="تلگرام" />
             </a>
-            <a href="#">
-              <img src="./assets/img/aparat.png" alt="آپارات" />
+            <a href="#0">
+              <img src="./assets/img/png/aparat.png" alt="آپارات" />
             </a>
           </div>
           <div>
